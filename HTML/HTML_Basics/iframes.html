@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>iFrames</h1><!--if we do not give the seperate heading to the respective iframe,the iframe are inline automatically -->
+    <h2>content</h2>
+    <ul>
+        <li><a target="_blank"  href="./anchor.html">Anchor</a></li> <!--If Target is Blank the link was open in another tab-->
+        <li><a target="frame1" href="./inner_links.html">Inner links</a></li> <!--If the target is name of iFrame the iframe was open in the same page-->
+    </ul>
+    <iframe name="frame1" width="400" height="400" src="./anchor.html"></iframe> <!--If we do not want border in iFrame we write "frameborder="0".-->
+    <iframe  width="400" height="400" src="http://example.com"></iframe><!-- we can actually write the link of other website insted it showing the link,in the box of iFrame that website will be open-->
+</body>
+</html>
