@@ -1,0 +1,61 @@
+html
+{
+    height: 100%;
+}
+body
+{
+    background-image: url("./img/pngtree-summer-education-training-admissions-guide-image_8876.jpg");
+    position:relative;
+    min-width: 100%;
+    max-height: 100%;
+}
+img
+{
+    float: left;
+    height: 100px;
+    width:200px;
+    position: top;
+   
+}
+.navbar{
+    background-color: skyblue ;
+    height:100px;
+    
+}
+
+form
+{
+    font-size: 20px;
+    margin-top: 30px;
+    float: right;
+    position:top;
+}
+input
+{
+    height: 25px;
+    width: 200px;
+    margin-left: 50px;
+}
+label
+{
+    width: 250px;
+    display: inline-block;
+}
+select
+{
+    margin-left:50px ;
+    height: 25px;
+    width:200px ;
+}
+.box:hover
+{
+    width:300px;
+    height:40px;
+    font-size: 40px;
+}
+/*.left
+{
+float:left;
+width:50%;
+height:100%;
+}*/
