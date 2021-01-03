@@ -1,0 +1,43 @@
+*  /*Universal selector:Selects all elements */
+{
+font-style: italic;
+}
+div /* Type selector : Selects all elements that have the given node name. */
+{
+    color: red;
+    margin-left: 30px;/*Move element 30px toward right*/
+}
+p
+{
+    color:blue;
+}
+.big /* Class selector:Selects all elements that have the given class attribute. */
+{
+    font-size: 25pt;
+}
+.bold
+{
+font-weight: bold;
+font-size:25pt;
+}
+#one /* ID selector:Selects an element based on the value of its id attribute. There should be only one element with a given ID in a document. */
+{
+    background-color: darkorange;
+
+}
+
+#two
+{
+    background-color: aqua;
+    border: black 1px;
+}
+
+input[disabled] /* This is used for disabled input (Attribute selector)*/
+{               /*Attribute selector: Selects all elements that have the given attribute. */
+    font-size: 15pt;
+    background-color: seagreen;
+}
+input[type="text"]
+{
+    font-size: 25pt;
+}

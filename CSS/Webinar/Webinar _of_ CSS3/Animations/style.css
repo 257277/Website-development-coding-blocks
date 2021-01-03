@@ -1,0 +1,52 @@
+.container
+{
+    margin: 30px;
+    width:400px;
+    height: 400px;
+    background-color: lightskyblue;
+}
+.item
+{
+    height: 50px;
+    width:50px;
+    margin: 20px;
+    background-color: darkblue;
+    border:solid black 1px;
+    display: inline-block;
+    animation: bounce 2s; /*animation done his work in 2sec*/
+    animation-iteration-count: infinite;/*due to this animation work infinite time*/
+    
+
+}
+#one 
+{
+animation-timing-function: ease-in;/* ease-in means start slow but end fast*/
+}
+#two
+{
+    animation-timing-function: ease-out;/*ease-out means start fast but end slow*/
+}
+#three
+{
+    animation-timing-function: linear;/*linear means speed is same throughout*/
+}
+#four
+{
+    animation-timing-function: ease-in-out;/*it is default one.So, if we do not write it works. Meaning of ease-in-out is to start slow in middle it fast and finish is also slow */
+}
+
+
+@keyframes bounce
+{
+    0%{
+
+    }
+    50%
+    {
+    transform: translate(0px,300px); 
+    }
+    100%
+    {
+
+    }
+}

@@ -1,0 +1,10 @@
+div /* It is known as selector */
+{
+  color: red;  
+  font-size: 20px;
+}
+p
+{
+    background-color: aqua;
+    border: 1px solid black;
+}

@@ -1,0 +1,23 @@
+div.btn
+{
+    margin: 50px;
+    background-color: mediumorchid;
+    color: black;
+    font-size: 30px;
+    padding: 50px;
+    width: 200px;
+    height: 25px;
+    box-shadow: gray -10px -10px 5px ; /*makeing shadow under block we have to select axis also and the last pixel when is for blurring the shadow */
+    transition: 1s;/*it basically apply time period on all the property of div*/
+    border-radius: 10px;/*it curve the edges of box*/
+}
+div.btn:hover
+{
+    transform: translate(10px ,10px);/*due to this when we move on the box it will move by the value which we give in the translate*/
+    box-shadow: gray -20px -20px 20px;/*due to this we have see the shadow is not moving because we give the value double as we give in previoue*/
+}
+div.btn:active /* At that place  when we click on button the active play a role(defination:Matches when an item is being activated by the user, for example clicked on.)*/
+{
+transform:translate(5px 5px);/* Transform:translate(5px,5px)*/
+box-shadow: gray 20px 20px 20px;
+}

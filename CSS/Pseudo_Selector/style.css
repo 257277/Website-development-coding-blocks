@@ -1,0 +1,26 @@
+.box
+{
+    height: 40px;
+    width: 40px;
+    background-color: dimgray;
+    padding: 10px;
+    color: white;
+}
+.box:hover /* When we mover cusor on data it apply the following property */
+{
+    background-color: red;
+    color: blue;
+    font-weight: bold;
+}
+.box:active /* When we click and hold the cursor on data, it apply the following properties*/
+{
+    height: 80px;
+    width: 80px;
+    font-size: larger;
+
+}
+input:focus /* It is only for input element */
+{
+    font-size: 30pt;
+    width: 150pt;
+}

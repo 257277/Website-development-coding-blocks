@@ -1,0 +1,59 @@
+div
+{
+    height: 100px;
+    width: 100px;
+    color: blue;
+    background-color: red;
+    margin: 200px;
+    padding: 50px;
+  
+}
+
+.one
+{
+    transform: scale(2,2);/* Transform have different meaning than height and width if we use transform it first make the blocks of initial size and then tranform(zoom) it in its own place and transform do not misplace other blocks the transform blocks may be overlap on other*/ 
+     /*In place of scale(2,2) we can use scaleX(2) scaleY(2) */
+}
+.two
+{
+    height: 200px;/*if we use height and width in place of transform it first draw the block of height and width and than appl margin and than draw further blocks*/
+    width:200px;
+}
+.three
+{ 
+    transform: scaleX(4);
+}
+.four
+{
+    transform: scaleY(2);
+}
+.five
+{
+    transform: translate(100px,150px);/*if we use translate 100px toward positive x axis and 150px toward positive y-axis */
+  /* In place of translate(100px,150px) we can use translateX(100px) translate(150px) */
+}
+.six
+{
+    transform: rotate(45deg);
+    /*In place of rotate(45deg) we can use rotateX(45deg) rotateY(45deg) or rotatez(45deg)*/
+}
+.seven
+{
+    transform: rotateX(75deg);/* when we rotate toward x axis the of block is reduced*/
+}
+.eight
+{
+    transform: rotateY(75deg);/*When we rotate toward Yaxis the block is reduced toward y axis*/
+}
+.nine
+{
+    transform: translate(100px) rotate(45deg);
+}
+.ten
+{
+    transform: skewX(40deg);/*It rotare y axis by 40deg or basiscally we can say that it turns rectangle into parallelogram*/
+}
+.eleven
+{
+    transform: skewY(40deg);/*It rotate x axis by 40deg */
+}

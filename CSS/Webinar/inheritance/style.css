@@ -1,0 +1,14 @@
+/*Id have high precedence then class and class has high precedence then element and element has high precedence then "*"*/
+/* If we define property of same kind two times than the property of last one will overtake the property of first one */
+*{
+    background-color: lightgreen;
+}
+
+.cl1
+{
+    background-color: lightpink;
+}
+#id1
+{
+    background-color: lightslategrey;
+}

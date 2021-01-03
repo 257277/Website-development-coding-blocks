@@ -1,0 +1,18 @@
+.box
+{
+    margin: 20px;/*It take space outside the border*/
+    padding: 10px;/*It take space inside the border*/
+    border: solid black 3px;/* Border make its own space*/
+}
+#div1
+{
+    background-color: orange;
+}
+#div2
+{
+    background-color: orchid;
+}
+#div3
+{
+    background-color: purple;
+}

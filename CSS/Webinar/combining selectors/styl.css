@@ -1,0 +1,32 @@
+li{
+    font-weight: bold;
+}
+
+ul>li /*Any element matching li that is a direct child of an element matching ul*/
+{
+    color: blue;
+}
+ol>li
+{
+    color: red;
+}
+ul ul /*any element matching B that is a descendant of an element matching A(That is:achild or a child of a child,etc.)*/
+{
+    font-style: italic;
+}
+ul li
+{
+    font-style:oblique ;
+}
+ul li li
+{
+    font-style: unset;
+}
+ol+ul/*Any element matching B that is the next child of an element matching A.*/
+{
+background-color: lightskyblue;
+}
+ol~ul/* Any element matching B that is decedent of an element matching A */
+{
+    background-color: lightyellow;
+}

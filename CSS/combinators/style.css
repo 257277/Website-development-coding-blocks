@@ -1,0 +1,19 @@
+h2+p /* Adjacent sibling combinator:The adjacent sibling combinator (+) separates two selectors and matches the second element only if it immediately follows the first element, and both are children of the same parent element.*/
+{
+    font-weight: bold;
+}
+
+h2~p /* General sibling combinator:The general sibling combinator (~) separates two selectors and matches all iterations of the second element, that are following the first element (though not necessarily immediately), and are children of the same parent element.*/
+{
+  color:red;  
+}
+
+section > p /*Child combinator:The > combinator selects nodes that are direct children of the first element.*/
+{
+background-color: aqua;
+}
+
+section p /*Descendant combinator:The   (space) combinator selects nodes that are descendants of the first element.*/
+{
+color: blue;
+}
