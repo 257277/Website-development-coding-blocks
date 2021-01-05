@@ -1,0 +1,22 @@
+.box
+{
+    height:100px;
+    width: 100px;
+    margin: 30px;
+
+    background-color: brown;
+}
+/* When we have to apply media queries we have consider the order in which they written*/
+@media (max-width:900px)
+{
+    .box{
+   background-color:green;
+}
+}
+@media (max-width:500px)
+{
+    .box
+    {
+    background-color: blue;
+    }
+}
