@@ -1,0 +1,51 @@
+.container
+{
+    height:auto;
+    width: 400px;
+    margin: 10px;
+    padding:10px;
+    background-color: rgb(31, 6, 90);
+}
+.item
+{
+    height:50px;
+    width: 50px;
+    margin:10px;
+    background-color: rgb(192, 17, 139);
+    color: white;
+    font-size: 28pt;
+}
+
+.container.one > .item.one/* class four which is inside item and both are direct chld of container one*/
+{
+position: relative;/*The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left. And no one take the space of that item*/
+left: 10px;/*when we write both left and right so left have high priority than right.Similarly top have high priority then bottom*/
+
+/* if we use posotion: absolute;The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block.*/
+}
+
+.one> .two
+{
+    position : fixed;/*The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to the initial containing block established by the viewport, except when one of its ancestors has a transform, perspective, or filter property set to something other than none , in which case that ancestor behaves as the containing block.*/
+    left: 10px;  /*it will also move when we scroll display that is its position is fixed on the viewport */
+}
+
+.container > .three
+{
+   position:sticky;/* The element position is by default is static and when the element crosses the threshold value which we give then its position become fixed*/
+   top:30px; 
+   bottom:30px;
+}
+
+.item:nth-child(3n)/*with the help of this every 3rd items of the container have the below properties*/
+{/*We can apply this nth child property on the container*/
+    background-color: tomato;
+}
+.one>.four
+{
+    position: relative;/*The z-index property specifies the stack order of an element.
+An element with greater stack order is always in front of an element with a lower stack order.*/
+  /*Z-index basically give the position inside and outside the display*/
+
+z-index: 5;
+}
