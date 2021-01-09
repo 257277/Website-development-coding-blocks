@@ -26,3 +26,37 @@ bird.eggs.forEach(function(val,idx)//it is called for each loop
 {
     console.log(idx,val);
 })
+
+//Second way of creating object in java script
+
+function Fruit(taste,color)
+{
+    this.color=color;
+    this.taste=taste;
+}
+
+//new keword
+let mango=new Fruit("sweet","yellow");
+let orange = new Fruit("sour","orange");
+
+// class keyword[ECMAScript 2015]
+//It is called class decleration (Not Hoisted)
+class Fruitclass{
+    constructor(taste,color)
+    {
+        this.color=color;
+        this.taste=taste;
+    }
+};
+let kiwi=new Fruitclass("sour","green");
+
+//class expression (Not hoisted)
+let fruitclass2= class{
+    constructor(taste,color)
+    {
+        this.color=color;
+        this.taste=taste;
+    }
+};
+
+let kiwi2=new fruitclass2("sweet","red");
