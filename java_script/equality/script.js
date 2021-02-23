@@ -1,7 +1,7 @@
 console.log(1=='1');// It is called Abstract equality comparision
 //Loose equality compares two values for equality, after converting both values to a common type. 
 //In this equality the right side data is converted into left side data type and then check it is true or not 
-
+//basically this check whether these two operator are reference to the same object in memory.
 
 console.log(1==='1');//It is called strict equality comparision
 //Neither value is implicitly converted to some other value before being compared.

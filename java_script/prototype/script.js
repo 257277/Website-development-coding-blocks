@@ -53,3 +53,28 @@ console.log(arr.__proto__ == Array.prototype);
 console.log(fun.__proto__ == Function.prototype);
 
 //i.e. Stirng .prototype inherits from Object.prototype
+
+
+console.log(str.charAt(4));
+console.log(typeof str.charAt);
+let str2 ="dnkjsfn";
+console.log(str.charAt == str2.charAt); //true
+
+str.charAt =function()
+    { 
+        return 'X';        //// It does not make a difference
+    }
+
+
+String.prototype.charAt = function () { return 'X'}; ///here we are changing the prototype of String
+console.log(str.charAt(5));
+//String.prototype contain all default string function
+
+Array.prototype.joinOriginal = Array.prototype.join;
+
+Array.prototype.join = function()
+    {
+      console.log('join called on', this);
+      return this.joinOriginal(...arguments);
+    }
+
