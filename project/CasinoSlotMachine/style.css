@@ -37,11 +37,17 @@ label
 }
 #stopButton
 {
-    margin-left: 350px;
+    margin-left: 150px;
     background-color: red;
     font-size: 25pt;
     box-shadow: 2px 2px black;
-
+}
+#spinButton
+{
+    margin-left: 100px;
+    background-color: red;
+    font-size: 25pt;
+    box-shadow: 2px 2px black;
 }
 
 .slot {

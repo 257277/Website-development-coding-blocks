@@ -4,7 +4,8 @@ let value3 = document.getElementById('value3')
 
 let inpSpeed = document.getElementById('inpSpeed')
 let stopButton=document.getElementById('stopButton')
-
+let spinButton=document.getElementById('spinButton')
+let value=document.getElementsByClassName('value')
 let values = [
     '😃', '😇', '😋', '😂', '😎', '😭', '😡'
 ]
@@ -28,10 +29,15 @@ function updateAnimation(newSpeed) {
 }
 
 $(document).ready(function(){
-    $(".stopButton").click(function(){
-        $(".slotspin").css("animation-play-state", "running");
+    $("#stopButton").click(function(){
+        $(".value").css("animation-play-state", "paused");
+        $(".value").animate({
+            height: '100px',
+          });
     });
-    
+    $("#spinButton").click(function(){
+        $(".value").css("animation-play-state", "running");
+    });
 });
 
 inpSpeed.onchange = function (ev) {
