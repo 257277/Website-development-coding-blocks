@@ -3,6 +3,7 @@ let value2 = document.getElementById('value2')
 let value3 = document.getElementById('value3')
 
 let inpSpeed = document.getElementById('inpSpeed')
+let stopButton=document.getElementById('stopButton')
 
 let values = [
     '😃', '😇', '😋', '😂', '😎', '😭', '😡'
@@ -25,6 +26,13 @@ function updateAnimation(newSpeed) {
 
     }, 1000 / newSpeed)
 }
+
+$(document).ready(function(){
+    $(".stopButton").click(function(){
+        $(".slotspin").css("animation-play-state", "running");
+    });
+    
+});
 
 inpSpeed.onchange = function (ev) {
     // document.documentElement => this is ":root" of css

@@ -1,5 +1,11 @@
+body
+{
+    margin-left: 15%;
+}
+
+
 :root {
-    --speed: 5;
+    --speed: 0;
 }
 .machine {
     background-color: peru;
@@ -17,14 +23,25 @@
     font-size: 30pt;
     margin-left: 30px;
     width: 50px;
+    background-color: red;
 }
-#spinButton
+label
 {
-    margin-left: 215px;
+    display: inline-block;
+    font-size: 25pt;
+    margin-left: 15%;
+}
+.buttonInput
+{
+    display: inline-flex;
+}
+#stopButton
+{
+    margin-left: 350px;
     background-color: red;
     font-size: 25pt;
     box-shadow: 2px 2px black;
-    
+
 }
 
 .slot {
@@ -49,7 +66,6 @@
     animation-iteration-count: infinite;
     animation-duration: calc(1s / var(--speed));
    
- 
 }
 
 @keyframes slotspin {

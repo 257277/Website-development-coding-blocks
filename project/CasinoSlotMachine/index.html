@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script async defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
   </head>
@@ -21,8 +22,10 @@
         <div class="value" id="value3">😇</div>
       </div>
     </div>
-    <input id="inpSpeed" type="number" min="1" max="10">
-    <button id="spinButton">SPIN</button>
+    <div class="buttonInput"> <label >Select Speed To Spin </label> 
+      <input  id="inpSpeed" type="number" min="1" max="10">
+    </div>
+    <button class="buttonInput" id="stopButton">STOP</button>
   </body>
   
   </html>
