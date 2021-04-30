@@ -30,10 +30,8 @@ function updateAnimation(newSpeed) {
 
 $(document).ready(function(){
     $("#stopButton").click(function(){
-        $(".value").css("animation-play-state", "paused");
-        $(".value").animate({
-            height: '100px',
-          });
+      clearInterval(animationId)
+          $(".value").css("animation-play-state", "paused");
     });
     $("#spinButton").click(function(){
         $(".value").css("animation-play-state", "running");
