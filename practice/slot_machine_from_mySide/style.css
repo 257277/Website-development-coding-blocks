@@ -1,0 +1,59 @@
+.machine
+{
+    margin: 50px;
+    height: 300px;
+    width: 900px;
+    background-color: chartreuse;
+    display: flex;
+    border: solid black 7px;
+   
+    
+}
+.Button
+{
+    border: solid  black 1px;
+    background-color: red;
+    width: fit-content;
+    height: fit-content;
+    font-size: 25pt;
+    margin-left: 260px;
+}
+.slot
+{
+  height: 250px;
+  width: 250px;
+  margin:20px;
+  border: solid darkblue 2px;
+  text-align: center;
+  font-size: 100pt;
+  line-height: 250px;
+  overflow: hidden;
+}
+.slot >.value
+{
+    animation-name: slotspin;
+    animation-iteration-count: 6.25;
+    animation-duration: 0.25s;
+    
+}
+
+
+@keyframes slotspin
+{
+    0% {
+        transform: translateY(-200px) ;
+        
+       }
+    50%
+    {
+        transform: translateY(0px) ease-in;
+    }
+    100%
+    {
+        transform: translateY(200px) ;
+    }
+    slot
+    {
+        animation-play-state: running;
+    }
+}

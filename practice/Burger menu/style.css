@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Orelega+One');
+
+body {
+  display: flex;
+  min-height:	100vh;
+  margin: 0;
+  padding: 1rem;
+  color: #FFFFFF;
+  background-color:	#16a085;
+  font-family: 'Orelega One';
+}
+
+.main {
+  margin: auto;
+}
+
+svg {
+  display: block;
+  margin: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
