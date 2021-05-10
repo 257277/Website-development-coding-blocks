@@ -6,9 +6,23 @@ app.use('/',express.static(__dirname+'/public'))
 
 function decryptQueryParams(req,res,next)
 {
-
-/////to do :decrypt
-
+    for (let q in req.query)
+    {
+     let r=req.query[q];
+     let result=" ";
+    for (var i = 0; i < r.length; ++i) {
+      let  c = r[i];
+      if (c == c.toUpperCase()) {
+        result += c.toLowerCase();
+      } else if (c == c.toLowerCase()) {
+        result += c.toUpperCase();
+      } else {
+        result += c;
+      }
+    }
+    req.query=result;
+    }
+    next()
 }
 
 
@@ -25,11 +39,10 @@ function decodeQueryBase64(req,res,next)
 
 app.get('/eval',decryptQueryParams,decodeQueryBase64,(req,res)=>
 {
-    console.log(req.query)
-
+   
   ////TODO:eval the code actually
 
-    res.send("======== eval result ==========")
+    res.send("Eval result = "+ req.query)
     
 }
 )
